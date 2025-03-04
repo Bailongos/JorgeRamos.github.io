@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jorge Ramos - Testimonios</title>
   <style>
-    /* General */
     body {
       font-family: 'Poppins', sans-serif;
       margin: 0;
@@ -15,94 +14,57 @@
       overflow-x: hidden;
     }
 
-    /* Header */
     header {
       background: linear-gradient(135deg, #4caf50, #2e7d32);
       color: white;
       padding: 2rem 1rem;
       text-align: center;
-      position: relative;
-      overflow: hidden;
     }
     header h1 {
       margin: 0;
-      font-size: 2.5rem;
-      animation: slideDown 1s ease-out;
-    }
-    @keyframes slideDown {
-      from {
-        transform: translateY(-50%);
-        opacity: 0;
-      }
-      to {
-        transform: translateY(0);
-        opacity: 1;
-      }
+      font-size: 2.2rem;
     }
 
-    /* Main container */
     .container {
-      max-width: 800px;
+      max-width: 700px;
       margin: 2rem auto;
-      padding: 1rem;
+      padding: 1.5rem;
       background: white;
-      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       border-radius: 8px;
-      animation: fadeIn 1.5s ease-in-out;
-    }
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-      }
-      to {
-        opacity: 1;
-      }
+      text-align: center;
     }
 
-    /* Message */
     .message {
       font-size: 1.2rem;
-      margin-bottom: 1rem;
       color: #555;
-      animation: fadeInUp 1.5s ease-in-out;
-    }
-    @keyframes fadeInUp {
-      from {
-        transform: translateY(50px);
-        opacity: 0;
-      }
-      to {
-        transform: translateY(0);
-        opacity: 1;
-      }
     }
 
-    /* Testimonies */
     .testimony {
-      margin-bottom: 3rem;
-      animation: zoomIn 1.5s ease;
-    }
-    @keyframes zoomIn {
-      from {
-        transform: scale(0.9);
-        opacity: 0;
-      }
-      to {
-        transform: scale(1);
-        opacity: 1;
-      }
+      margin: 2rem 0;
     }
     .testimony h2 {
-      margin-bottom: 0.5rem;
-      font-size: 1.7rem;
+      font-size: 1.5rem;
       color: #4caf50;
     }
-    .wistia_embed {
-      margin: 0 auto;
+
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%; /* Aspect ratio 16:9 */
+      height: 0;
+      overflow: hidden;
       max-width: 100%;
+      background: #000;
+      border-radius: 8px;
+    }
+    .video-container iframe, .video-container .wistia_embed {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
     }
 
-    /* Footer */
     footer {
       text-align: center;
       padding: 1.5rem 1rem;
@@ -118,46 +80,31 @@
   </header>
   <div class="container">
     <p class="message">Jorge Ramos ha reprobado. A continuación, se presentan testimonios en video:</p>
+    
     <div class="testimony">
       <h2>Testimonio 1</h2>
-      <script src="https://fast.wistia.com/embed/medias/c3h1epurp7.jsonp" async></script>
-      <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
-      <div class="wistia_responsive_padding" style="padding:177.71% 0 0 0;position:relative;">
-        <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
-          <div class="wistia_embed wistia_async_c3h1epurp7 videoFoam=true" style="height:100%;position:relative;width:100%;">
-            <div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;">
-              <img src="https://fast.wistia.com/embed/medias/c3h1epurp7/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" />
-            </div>
-          </div>
-        </div>
+      <div class="video-container">
+        <script src="https://fast.wistia.com/embed/medias/c3h1epurp7.jsonp" async></script>
+        <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+        <div class="wistia_embed wistia_async_c3h1epurp7 videoFoam=true"></div>
       </div>
     </div>
+    
     <div class="testimony">
       <h2>Testimonio 2</h2>
-      <script src="https://fast.wistia.com/embed/medias/svph2hxvqo.jsonp" async></script>
-      <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
-      <div class="wistia_responsive_padding" style="padding:177.71% 0 0 0;position:relative;">
-        <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
-          <div class="wistia_embed wistia_async_svph2hxvqo videoFoam=true" style="height:100%;position:relative;width:100%;">
-            <div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;">
-              <img src="https://fast.wistia.com/embed/medias/svph2hxvqo/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" />
-            </div>
-          </div>
-        </div>
+      <div class="video-container">
+        <script src="https://fast.wistia.com/embed/medias/svph2hxvqo.jsonp" async></script>
+        <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+        <div class="wistia_embed wistia_async_svph2hxvqo videoFoam=true"></div>
       </div>
     </div>
+    
     <div class="testimony">
       <h2>Testimonio 3</h2>
-      <script src="https://fast.wistia.com/embed/medias/fmb229z5z9.jsonp" async></script>
-      <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
-      <div class="wistia_responsive_padding" style="padding:177.71% 0 0 0;position:relative;">
-        <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
-          <div class="wistia_embed wistia_async_fmb229z5z9 videoFoam=true" style="height:100%;position:relative;width:100%;">
-            <div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;">
-              <img src="https://fast.wistia.com/embed/medias/fmb229z5z9/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" />
-            </div>
-          </div>
-        </div>
+      <div class="video-container">
+        <script src="https://fast.wistia.com/embed/medias/fmb229z5z9.jsonp" async></script>
+        <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+        <div class="wistia_embed wistia_async_fmb229z5z9 videoFoam=true"></div>
       </div>
     </div>
   </div>
